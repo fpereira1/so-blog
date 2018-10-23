@@ -5,22 +5,14 @@ This script creates blog posts from your stack overflow contributions
     npm install -g so-blog
 
 ## Usage
-
-    so-blog QueryOutput.csv ./posts/
+    so-blog userId ./posts/
+- userId param is your StackOverflow user ID.
 
 ## How to use
 
 Download your questions from StackOverflow:
 
-1. Go to: https://data.stackexchange.com/stackoverflow/query/new
-2. Run query:
-
-```
-select Id, PostTypeId, Title, Body, Tags, CreationDate, LastEditDate, ViewCount 
-from Posts
-where OwnerUserId = 123123 # change this to your user id
-and PostTypeId = 1
-order by ViewCount desc
-```
-3. Download CSV file
-4. Run `so-blog QueryOutput.csv ./posts/` to generate posts
+1. Go to: https://stackoverflow.com/
+2. Login and go to your profile page
+3. Copy userId from browser url, it should looks something like this: https://stackoverflow.com/users/200/john-downey (200 is the user ID in this example)
+4. Run `so-blog userId ./posts/` to generate posts
