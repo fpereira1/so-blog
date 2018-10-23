@@ -4,7 +4,7 @@ This script creates blog posts from your stack overflow contributions
 
     npm install -g so-blog
 
-## Usage:
+## Usage
 
     so-blog QueryOutput.csv ./posts/
 
