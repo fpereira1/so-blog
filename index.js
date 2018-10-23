@@ -26,6 +26,7 @@ comments: true
 
 %s
 `;
+//parameter is passed
 
 fs.createReadStream(file)
   .on('error', function (err) {
