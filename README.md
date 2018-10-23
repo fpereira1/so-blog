@@ -7,7 +7,9 @@ This script creates blog posts from your stack overflow contributions
 ## Usage:
 
     so-blog QueryOutput.csv ./posts/
-    
+
+## How to use
+
 Download your questions from StackOverflow:
 
 1. Go to: https://data.stackexchange.com/stackoverflow/query/new
